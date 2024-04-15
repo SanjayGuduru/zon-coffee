@@ -30,6 +30,6 @@ jobs:
         ECR_REPOSITORY: zon-coffee
         IMAGE_TAG: latest
       run: |
-        docker build --file ./Dockerfile -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+       docker build --file ./Dockerfile -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+       docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         
